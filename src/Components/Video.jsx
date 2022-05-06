@@ -22,8 +22,14 @@ export default function MediaCard({ data }) {
           title="YouTube video player"
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
+          allowfullscreen="allowfullscreen"
+          mozallowfullscreen="mozallowfullscreen"
+          msallowfullscreen="msallowfullscreen"
+          oallowfullscreen="oallowfullscreen"
+          webkitallowfullscreen="webkitallowfullscreen"
+        >
+          >
+        </iframe>
         <CardContent className={style.dis}>
           <Typography gutterBottom variant="h5" component="div">
             {data.snippet.title}
