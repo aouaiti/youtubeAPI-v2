@@ -8,9 +8,20 @@ import SearchIcon from "@mui/icons-material/Search";
 import DirectionsIcon from "@mui/icons-material/Directions";
 import { useState } from "react";
 import Youtube from "./API/YoutubeAPI";
+import { useEffect } from "react";
 
 export default function CustomizedInputBase({ onSubmit }) {
   const [term, setTerm] = useState("");
+  useEffect(() => {
+    (async () => {
+      const data = await Youtube.get("/search", {
+        params: {
+          q: "balti",
+        },
+      });
+      onSubmit(data);
+    })();
+  }, []);
   const submitHandler = async (e) => {
     e.preventDefault();
     console.log(term);
