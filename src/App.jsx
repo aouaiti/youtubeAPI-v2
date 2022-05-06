@@ -6,8 +6,23 @@ import SimplePaper from "./Components/UI/Paper";
 import CustomizedInputBase from "./Components/SearchBar";
 import DataList from "./Components/DataList";
 import MediaCard from "./Components/Video";
+import { useEffect } from "react";
+
+const dataInit = {
+  id: {
+    videoId: "oRC1K7uUBZ8",
+  },
+  snippet: {
+    title: "Elyanna & Balti - Ghareeb Alay (Official Video)",
+    description:
+      "Official music video by Elyanna - Ghareeb Alay © 2022 El Mar Music",
+  },
+};
 
 function App() {
+  useEffect(() => {
+    setVid(<MediaCard data={dataInit} />);
+  }, []);
   const [data, setData] = useState([]);
   const [vid, setVid] = useState(null);
   const clickHandler = (data) => {

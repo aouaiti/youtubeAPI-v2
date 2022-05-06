@@ -5,11 +5,13 @@ import ListItemText from "@mui/material/ListItemText";
 import Typography from "@mui/material/Typography";
 import { Box } from "@mui/material";
 import style from "./Snippet.module.css";
+import { useEffect } from "react";
 
 export default function AlignItemsList({ data, clickHandler2 }) {
   const clickHandler = (e) => {
     clickHandler2(data);
   };
+  useEffect(()=>{ListItem},[])
   return (
     <>
       <ListItem
