@@ -1,0 +1,15 @@
+@media (max-width: 899px) {
+  .list {
+    width: 250px !important;
+    margin: 5px 10px;
+  }
+  .data {
+    display: none;
+  }
+  .img {
+    width: 200px;
+  }
+}
+.data {
+  background-color: white;
+}

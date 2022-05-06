@@ -1,0 +1,12 @@
+@media (max-width: 899px) {
+  .data {
+    display: flex;
+    width: fit-content;
+    justify-content: center;
+    /* gap: 10px; */
+    /* padding: 10px !important; */
+  }
+}
+.data {
+  background-color: white;
+}

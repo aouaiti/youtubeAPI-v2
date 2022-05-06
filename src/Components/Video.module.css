@@ -1,0 +1,10 @@
+/* @media (max-width: 899px) {
+  .dis {
+    display: none !important;
+  }
+} */
+@media (min-width: 900px) {
+  iframe {
+    height: 70%;
+  }
+}

@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto";
+}
+html,
+body {
+  overflow: hidden;
+}
+.container {
+  display: flex !important;
+  flex-direction: column !important;
+}
+.dataSection {
+  display: flex;
+  flex: 10;
+}
+.box1 {
+  height: 100%;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #cd5c5c;
+}
+.box2 {
+  flex: 2;
+  height: 100%;
+  /* min-height: 400px; */
+  max-height: 90vh;
+  background-color: #cd5c5c;
+  width: 100%;
+}
+.box3 {
+  flex: 1;
+  height: 100%;
+  /* min-height: 400px; */
+  max-height: 90vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  background-color: #cd5c5c;
+  display: block !important;
+}
+@media (max-width: 900px) {
+  .container {
+    display: flex !important;
+    flex-direction: column !important;
+  }
+  .dataSection {
+    flex-direction: column;
+  }
+  .box2 {
+    flex: 1;
+  }
+  .box3 {
+    flex: 1;
+    overflow-y: hidden;
+    overflow-x: auto;
+  }
+}
+.box3::-webkit-scrollbar {
+  width: 12px;
+}
+.box3::-webkit-scrollbar-track {
+  background: #1c1c1c;
+}
+.box3::-webkit-scrollbar-thumb {
+  background-color: #fa8072;
+}
+#root {
+  background-size: contain;
+}
